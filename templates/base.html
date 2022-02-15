@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+                    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+                    crossorigin="anonymous">
+                    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css') }}" />
+        <title>{{ title }}</title>
+    </head>
+    <body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-1 h3">
+                    Миссия колонизации Марса
+                </span>
+            </div>
+            <div class="d-flex">
+                <span class="me-auto">Mars One</span>
+            </div>
+        </nav>
+        <h4 class="fw-light mission-moto mb-3 ms-3">
+            И на Марсе будут яблоки цвести!
+        </h4>
+    </header>
+        <h1>{% block content %}
+            {% endblock %}</h1>
+    </body>
+</html>
